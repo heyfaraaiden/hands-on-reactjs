@@ -1,0 +1,54 @@
+:root {
+  --grayish: rgb(168, 179, 207);
+  --grayish-on-hover: rgba(168, 179, 207, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgb(14, 18, 23);
+  color: #fff;
+  line-height: 1.5;
+}
+
+h3 {
+  line-height: 1.3;
+  font-size: 17px;
+}
+
+.container {
+  padding: .5rem 1rem;
+  width: 100%;
+  max-width: 1456px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  color: var(--grayish);
+
+  &:hover {
+    background-color: var(--grayish-on-hover);
+    color: #fff;
+  }
+}
+
+img {
+  width: 100%;
+}

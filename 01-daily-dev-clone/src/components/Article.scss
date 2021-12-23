@@ -1,0 +1,75 @@
+.article {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgb(28, 31, 38);
+  padding: 1rem 0 0.5rem;
+  cursor: pointer;
+  border: 1px solid var(--grayish-on-hover);
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    border: 1px solid rgba(168, 179, 207, 0.4);
+  }
+
+  &__header,
+  &__footer {
+    padding: 0 1.5rem;
+  }
+
+  &__logo {
+    width: 24px;
+    border-radius: 100px;
+    margin-bottom: 0.5rem;
+  }
+
+  &__info {
+    color: var(--grayish);
+    margin-top: 0.25rem;
+  }
+
+  &__img {
+    padding: 0 0.5rem;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &__img img {
+    border-radius: 12px;
+    height: 142px;
+    object-fit: cover;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__footer button {
+    display: flex;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  &__footer svg {
+    width: 30px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .article {
+    display: grid;
+    grid-template-rows: 0.8fr 1fr 0fr;
+
+    &__text {
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

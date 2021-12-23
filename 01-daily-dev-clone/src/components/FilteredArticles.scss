@@ -1,0 +1,24 @@
+.filtered-articles {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2.5rem 0 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @media screen and (min-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 680px;
+  }
+  
+  @media screen and (min-width: 960px) {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1100px;
+  }
+  
+  @media screen and (min-width: 1264px) {
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 1340px;
+  }
+}
