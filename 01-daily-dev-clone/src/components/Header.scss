@@ -7,12 +7,12 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem;
   }
 
   &__logo {
     width: 100%;
-    max-width: 120px;
+    max-width: 150px;
 
     & a {
       display: grid;
@@ -25,11 +25,11 @@
   &__btns {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
 
-    & > &__btn {
-      width: 34px;
-      height: 34px;
+    & > button {
+      width: 46px;
+      height: 46px;
     }
   }
 
@@ -38,8 +38,8 @@
     font-size: 20px;
 
     & > svg {
-      width: 24px;
-      height: 24px;
+      width: 36px;
+      height: 36px;
     }
   }
 
@@ -51,8 +51,8 @@
 
   &__profile > &__btn,
   &__num {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     display: grid;
     place-items: center;
     font-weight: bold;
@@ -75,6 +75,10 @@
       padding: 0.5rem 1rem 0.5rem;
       flex-direction: row;
       gap: 0;
+    }
+
+    &__logo {
+      max-width: 130px;
     }
     
     &__btns > &__btn {
