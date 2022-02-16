@@ -1,0 +1,46 @@
+.form {
+  width: 100%;
+  max-width: 350px;
+  margin-top: 2.5rem;
+}
+
+.form-control {
+  margin-bottom: .75rem;
+}
+
+.form-control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: .25rem;
+}
+
+.form-control input, .button {
+  font-size: inherit;
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  padding: .5rem .5rem;
+  border: none;
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.form-control input:focus {
+  outline: none;
+  border-bottom: 2px solid rgba(138, 43, 226, .5);
+}
+
+.button {
+  margin-top: 1rem;
+  padding: .75rem .5rem;
+  background-color: rgb(138, 43, 226);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .075rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.button:hover {
+  opacity: .8;
+}
